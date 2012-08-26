@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="style.max.css">
+</head>
+<body>
+	<div class="mailbox-viewport">
+		<div class="mailbox-wrapper">
+
+			<div class="mailbox-top-wrapper">
+
+				<div class="mailbox-flag">
+					<div class="mailbox-flag-part red"></div>
+					<div class="mailbox-flag-part red"></div>
+					<div class="mailbox-flag-part black"></div>
+				</div>
+
+				<div class="mailbox-top">
+					<div class="mailbox-top-part black texture-1"></div>
+					<div class="mailbox-top-part black texture-1"></div>
+					<div class="mailbox-top-part black texture-1"></div>
+					<div class="mailbox-top-part black texture-1"></div>
+					<div class="mailbox-top-part black texture-1"></div>
+				</div>
+
+			</div>
+
+			<div class="mailbox-caps-wrapper">
+
+				<div class="mailbox-cap front">
+
+					<div class="mailbox-text">
+						<p>MAIL</p>
+					</div>
+
+					<div class="mailbox-mailhole">
+						<div class="mailbox-mailhole-top red"></div>
+						<div class="mailbox-mailhole-side red"></div>
+						<div class="mailbox-mailhole-side red"></div>
+					</div>
+
+					<div class="cap-top">
+						<div class="cap-top-part black"></div>
+						<div class="cap-top-part black"></div>
+						<div class="cap-top-part black"></div>
+						<div class="cap-top-part black"></div>
+						<div class="cap-top-part black"></div>
+					</div>
+					<div class="cap-bottom black"></div>
+				</div>
+
+				<div class="mailbox-cap back">
+					<div class="cap-top">
+						<div class="cap-top-part black texture-2"></div>
+						<div class="cap-top-part black texture-2"></div>
+						<div class="cap-top-part black texture-2"></div>
+						<div class="cap-top-part black texture-2"></div>
+						<div class="cap-top-part black texture-2"></div>
+					</div>
+					<div class="cap-bottom black texture-2"></div>
+				</div>
+
+			</div>
+
+			<div class="mailbox-side-wrapper">
+				<div class="mailbox-side left black texture-1"></div>
+				<div class="mailbox-side right black texture-1"></div>
+			</div>
+
+			<div class="mailbox-bottom black texture-1"></div>
+
+			<!-- Contact Form -->
+			<div class="mailbox-contact-form-dummy hidden"></div>
+
+		</div>
+
+		<div class="mailbox-contact-form hidden">
+				<form id="contactForm" class="localStorage" action="processForm.php" method="post">			
+					<!-- Your name -->		 
+				    <div class="field info name">
+				      <input type="text" name="senderName" id="senderName" class="stored" placeholder="your name" required="required" autocomplete="off" maxlength="40" />
+				    </div>
+							 
+				 	<!-- Your email -->
+				    <div class="field info email">
+				    	<input type="email" name="senderEmail" id="senderEmail" class="stored" placeholder="your email" required="required" autocomplete="off" maxlength="50" />
+				    </div>
+
+				    <!-- Your message -->
+				    <div class="field message">
+				    	<textarea name="message" id="message" class="stored" placeholder="" required="required" rows="10" maxlength="10000"></textarea>
+				    </div>	
+
+				    <!-- Hit to send! -->
+					<div id="formButtons" class="mailbox-submit-btn">
+						<input type="submit" id="sendMessage" name="sendMessage" value="SEND" />
+					</div>
+
+				</form>
+			</div><!-- /Contact Form -->
+
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="prefixfree.min.js"></script>
+	<script src="script.js"></script>
+	
+</body>
+</html>
